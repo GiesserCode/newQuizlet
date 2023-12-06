@@ -179,7 +179,7 @@ function App() {
   const [right, setRight] = useState(false);
 
   const getNewWord = () => {
-    setNum((prevNum) => {
+    setNum(() => {
       let nextIndex;
       const notDoneWrongWords = words.filter(
           (word) => !word.done && word.wrong > 0
